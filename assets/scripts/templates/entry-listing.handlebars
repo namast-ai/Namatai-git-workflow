@@ -1,0 +1,24 @@
+{{#each books as |book|}}
+  {{log entry}}
+  <section data-id="{{book.id}}">
+
+<h6>Title: </h6>
+<p>
+  {{#if book.title}}
+    {{book.title}}
+  {{else}}
+    No tile listed.
+  {{/if}}
+</p>
+
+<h6>Author: </h6>
+<p>
+  {{#if book.author}}
+    {{book.author}}
+  {{else}}
+    No author listed.
+  {{/if}}
+</p>
+
+</section>
+{{/each}}
